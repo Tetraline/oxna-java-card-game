@@ -11,7 +11,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card " + this.getSymbol() + " of " + suit;
+        return "Card " + this.getSymbol() + " ("+this.value+ ") of " + suit;
     }
 
     public String getSymbol() {
@@ -25,7 +25,7 @@ public class Card {
                     return "Q";
                 case 13:
                     return "K";
-                case 15:
+                case 14:
                     return "A";
             }
         }
