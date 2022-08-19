@@ -8,7 +8,6 @@ public class Snap extends CardGame {
         this.shuffleDeck();
         Scanner scanner = new Scanner(System.in);
         ConsoleInput con = new ConsoleInput(
-                1,
                 2,
                 TimeUnit.SECONDS
         );
