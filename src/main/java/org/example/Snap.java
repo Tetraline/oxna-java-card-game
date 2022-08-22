@@ -1,13 +1,15 @@
 package org.example;
 
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 public class Snap extends CardGame {
     public void playSnap() throws InterruptedException {
         this.shuffleDeck();
         Scanner scanner = new Scanner(System.in);
+        ExecutorService ex = Executors.newSingleThreadExecutor();
         ConsoleInput con = new ConsoleInput(
+                ex,
                 2,
                 TimeUnit.SECONDS
         );
@@ -74,5 +76,6 @@ public class Snap extends CardGame {
                 turn = 0;
             }
         }
+        ex.shutdownNow();
     }
 }

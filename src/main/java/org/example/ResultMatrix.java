@@ -5,15 +5,15 @@ package org.example;
 This class helps implement the following logic:
 
   | Turn      | Said Snap?          | Actually a snap?   | Result   |
-  |-----------|---------------------|--------------------|----------|
-  | P1's turn | They say Snap       | Snap has happened  | P1 wins  | --
-  | P1's turn | They don't say snap | Snap has happened  | P2 wins  | --
-  | P2's turn | They say Snap       | Snap has happened  | P2 wins  | --
-  | P2's turn | They don't say snap | Snap has happened  | P1 wins  | ---
-  | P1's turn | They say Snap       | Snap didn't happen | P2 wins  | ---
-  | P1's turn | They don't say snap | Snap didn't happen | Nothing  | ---
-  | P2's turn | They say Snap       | Snap didn't happen | P1 wins  | --
-  | P2's turn | They don't say snap | Snap didn't happen | Nothing  | ---
+  |-----------|---------------------|--------------------|----------/
+  | P1's turn | They say Snap       | Snap has happened  | P1 wins  |
+  | P1's turn | They don't say snap | Snap has happened  | P2 wins  |
+  | P2's turn | They say Snap       | Snap has happened  | P2 wins  |
+  | P2's turn | They don't say snap | Snap has happened  | P1 wins  |
+  | P1's turn | They say Snap       | Snap didn't happen | P2 wins  |
+  | P1's turn | They don't say snap | Snap didn't happen | Nothing  |
+  | P2's turn | They say Snap       | Snap didn't happen | P1 wins  |
+  | P2's turn | They don't say snap | Snap didn't happen | Nothing  |
 
     Turn encodes to 0 (player 1) and 1 (player 2)
     Said snap encodes to 1 or 0 (true or false)
