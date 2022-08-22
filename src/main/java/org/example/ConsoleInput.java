@@ -15,8 +15,7 @@ public class ConsoleInput {
 
     public String readLine() throws InterruptedException {
         String input = null;
-        Future<String> result = executorService.submit(
-                new ConsoleInputReadTask());
+        Future<String> result = executorService.submit(new ConsoleInputReadTask());
         try {
             input = result.get(timeout, unit);
         } catch (ExecutionException e) {
