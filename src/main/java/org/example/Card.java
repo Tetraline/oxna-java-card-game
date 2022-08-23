@@ -11,7 +11,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card " + this.getSymbol() + " ("+this.value+ ") of " + suit;
+        return "Card " + this.getSymbol() + " (" + this.value + ") of " + suit;
     }
 
     public String getSymbol() {
@@ -36,15 +36,7 @@ public class Card {
         return suit;
     }
 
-    public void setSuit(Suit suit) {
-        this.suit = suit;
-    }
-
     public byte getValue() {
         return value;
-    }
-
-    public void setValue(byte value) {
-        this.value = value;
     }
 }
