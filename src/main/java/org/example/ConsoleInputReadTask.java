@@ -3,9 +3,9 @@ package org.example;
 import java.io.*;
 import java.util.concurrent.Callable;
 
+// Modified code from
+// https://www.javaspecialists.eu/archive/Issue153-Timeout-on-Console-Input.html
 public class ConsoleInputReadTask implements Callable<String> {
-  // Modified code from
-  // https://www.javaspecialists.eu/archive/Issue153-Timeout-on-Console-Input.html
   @Override
   public String call() throws IOException{
     BufferedReader br = new BufferedReader(

@@ -2,6 +2,8 @@ package org.example;
 
 import java.util.concurrent.*;
 
+// Modified code from
+// https://www.javaspecialists.eu/archive/Issue153-Timeout-on-Console-Input.html
 public class ConsoleInput {
     private final int timeout;
     private final TimeUnit unit;

@@ -8,7 +8,7 @@ public class Snap extends CardGame {
         this.shuffleDeck();
         Scanner scanner = new Scanner(System.in);
         ExecutorService ex = Executors.newSingleThreadExecutor();
-        ConsoleInput con = new ConsoleInput(
+        ConsoleInput console = new ConsoleInput(
                 ex,
                 2,
                 TimeUnit.SECONDS
@@ -38,7 +38,7 @@ public class Snap extends CardGame {
             } else {
                 System.out.print(".  It is " + p2.getName() + "'s turn.\n");
             }
-            userInput = con.readLine();
+            userInput = console.readLine();
             if (userInput == null) {
                 input = 0;
             } else {
