@@ -7,7 +7,7 @@ public enum Suit {
        this.c = c;
     }
 
-    public char getC() {
+    public char getIcon() {
         return c;
     }
 }

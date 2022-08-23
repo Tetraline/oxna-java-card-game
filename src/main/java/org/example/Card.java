@@ -11,7 +11,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card " + this.getSymbol() + " (" + this.value + ") of " + suit;
+        return "Card " + this.getSymbol() + " (" + this.value + ") of " + suit.getIcon();
     }
 
     public String getSymbol() {
