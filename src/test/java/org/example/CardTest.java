@@ -23,7 +23,7 @@ public class CardTest {
         assertEquals("2", target.getSymbol());
         Card card1 = new Card(Suit.HEARTS, (byte) 10);
         Card card2 = new Card(Suit.HEARTS, (byte) 11);
-        Card card3 = new Card(Suit.HEARTS, (byte) 15);
+        Card card3 = new Card(Suit.HEARTS, (byte) 14);
         assertEquals("10", card1.getSymbol());
         assertEquals("J", card2.getSymbol());
         assertEquals("A", card3.getSymbol());
